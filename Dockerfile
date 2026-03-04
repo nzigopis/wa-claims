@@ -7,6 +7,9 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
+
+RUN echo "=== /app contents ===" && ls -la /app && echo "=== /app/src contents ===" && ls -la /app/src || echo "src dir missing!"
+
 RUN npm run build
 
 # --- runtime stage ---
