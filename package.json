@@ -1,1 +1,22 @@
-{\n  "name": "whatsapp-flows-endpoint",\n  "version": "1.0.0",\n  "description": "An example endpoint server for WhatsApp Flows https://developers.facebook.com/docs/whatsapp/flows",\n  "main": "src/server.js",\n  "type": "module",\n  "scripts": {\n    "start": "node src/server.js"\n  },\n  "author": "WhatsApp Flows Team",\n  "license": "MIT",\n  "dependencies": {\n    "express": "^4.22.1"\n  },\n  "engines": {\n    "node": ">=16.0.0"\n  },\n  "keywords": []\n}
+{
+  "name": "whatsup",
+  "version": "1.0.0",
+  "description": "WhatsApp Flows – Lost Phone Report App",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
